@@ -1,22 +1,22 @@
+\docType{data}
 \name{t.diff}
 \alias{t.diff}
-\alias{t.diff}
-\title{The differences of P-values in t test assuming equal or unequal variances}
+\title{The differences of P-values in t test assuming equal or unequal
+variances}
+\format{A data frame with 1000 rows and 99 columns.}
+\source{
+  By simulation.
+}
 \description{
-Given that the variances of two groups are unequal, we compute the
-difference of P-values assuming equal or unequal variances
-respectively by simulation.}
-\details{See the Examples section for the generation of this data.
-
-\subsection{Source}{By simulation.}
-
-\subsection{Format}{A data frame with 1000 rows and 99 columns.}}
-\docType{data}
-\references{Welch B (1947). ``The generalization of Student's
-problem when several different population variances are
-involved.'' Biometrika, 34(1/2), 28--35.}
-\keyword{datasets}
-\examples{data(t.diff)
+  Given that the variances of two groups are unequal, we
+  compute the difference of P-values assuming equal or
+  unequal variances respectively by simulation.
+}
+\details{
+  See the Examples section for the generation of this data.
+}
+\examples{
+data(t.diff)
 boxplot(t.diff, axes = FALSE, xlab = expression(n[1]))
 axis(1)
 axis(2)
@@ -36,24 +36,11 @@ if (interactive()) {
     }
     t.diff = as.data.frame(t(t.diff))
     colnames(t.diff) = 2:100
-}}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
+}
+\references{
+  Welch B (1947). ``The generalization of Student's problem
+  when several different population variances are
+  involved.'' Biometrika, 34(1/2), 28--35.
+}
+\keyword{datasets}

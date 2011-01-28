@@ -1,23 +1,26 @@
+\docType{data}
 \name{BinormCircle}
 \alias{BinormCircle}
-\alias{BinormCircle}
 \title{Random numbers containing a ``circle''}
+\format{A data frame with 20000 observations on the following 2
+variables.  \describe{ \item{V1}{the first random variable with
+the x-axis coordinate of the circle} \item{V2}{the second random
+variable with the y-axis coordinate of the circle} }}
+\source{
+  \url{http://yihui.name/en/2008/09/to-see-a-circle-in-a-pile-of-sand/}
+}
 \description{
-The data was generated from two independent random varialbes (standard
-Normal distribution) and further points on a circle were added to the data.
-The order of the data was randomized.}
-\details{See the example section for the code to generate the data.
-
-\subsection{Format}{A data frame with 20000 observations on the
-following 2 variables.  \describe{ \item{V1}{the first
-random variable with the x-axis coordinate of the circle}
-\item{V2}{the second random variable with the y-axis
-coordinate of the circle} }}
-
-\subsection{Source}{\url{http://yihui.name/en/2008/09/to-see-a-circle-in-a-pile-of-sand/}}}
-\docType{data}
-\keyword{datasets}
-\examples{data(BinormCircle)
+  The data was generated from two independent random
+  varialbes (standard Normal distribution) and further
+  points on a circle were added to the data. The order of
+  the data was randomized.
+}
+\details{
+  See the example section for the code to generate the
+  data.
+}
+\examples{
+data(BinormCircle)
 
 ## original plot: cannot see anything
 plot(BinormCircle)
@@ -60,42 +63,6 @@ y2 = rep(0.5 * sin(seq(0, 2 * pi, length = 500)),
     20)
 x = cbind(c(x1, x2), c(y1, y2))
 BinormCircle = as.data.frame(round(x[sample(20000), 
-    ], 3))}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    ], 3))
+}
+\keyword{datasets}
