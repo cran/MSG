@@ -1,25 +1,24 @@
+\docType{data}
 \name{tukeyCount}
 \alias{tukeyCount}
-\alias{tukeyCount}
 \title{Results of a Simulation to Tukey's Fast Test}
+\format{A data frame with 10000 observations on the following 3
+variables.  \describe{ \item{pvalue.t}{P-values of t test}
+\item{pvalue.w}{P-values of Wilcoxon test} \item{count}{Tukey's
+counts} }}
+\source{
+  Simulation; see the Examples section below.
+}
 \description{
-For the test of means of two samples, we calculated the P-values and
-recorded the counts of Tukey's rule of thumb.}
-\details{See the reference for details.
-
-\subsection{Format}{ A data frame with 10000 observations on the
-following 3 variables.  \describe{
-\item{pvalue.t}{P-values of t test}
-\item{pvalue.w}{P-values of Wilcoxon test}
-\item{count}{Tukey's counts} }}
-
-\subsection{Source}{Simulation; see the Examples section below.}}
-\docType{data}
-\references{D. Daryl Basler and Robert B. Smawley. Tukey's Compact
-versus Classic Tests. \emph{The Journal of Experimental
-Education}, Vol. 36, No.  3 (Spring, 1968), pp. 86-88}
-\keyword{datasets}
-\examples{data(tukeyCount)
+  For the test of means of two samples, we calculated the
+  P-values and recorded the counts of Tukey's rule of
+  thumb.
+}
+\details{
+  See the reference for details.
+}
+\examples{
+data(tukeyCount)
 
 ## does Tukey's rule of thumb agree with t test and
 #   Wilcoxon test?
@@ -55,39 +54,11 @@ if (interactive()) {
     })))
     colnames(tukeyCount) = c("pvalue.t", "pvalue.w", "count")
     
-}}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
+}
+\references{
+  D. Daryl Basler and Robert B. Smawley. Tukey's Compact
+  versus Classic Tests. \emph{The Journal of Experimental
+  Education}, Vol. 36, No.  3 (Spring, 1968), pp. 86-88
+}
+\keyword{datasets}

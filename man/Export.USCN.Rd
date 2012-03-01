@@ -1,22 +1,24 @@
+\docType{data}
 \name{Export.USCN}
 \alias{Export.USCN}
-\alias{Export.USCN}
 \title{Export of US and China from 1999 to 2004 in US dollars}
-\description{Export of US and China from 1999 to 2004 in US dollars.}
-\details{\subsection{Format}{A data frame with 13 observations on the
+\format{A data frame with 13 observations on the
 following 3 variables. \describe{ \item{Export}{amount of
 export} \item{Year}{year from 1999 to 2004}
 \item{Country}{country: US or China} }}
-
-\subsection{Source}{\url{http://stat.wto.org}}}
-\docType{data}
-\keyword{datasets}
-\examples{data(Export.USCN)
+\source{
+  \url{http://stat.wto.org}
+}
+\description{
+  Export of US and China from 1999 to 2004 in US dollars
+}
+\examples{
+data(Export.USCN)
 par(mar = c(4, 4.5, 1, 4.5))
 plot(1:13, Export.USCN$Export, xlab = "Year / Country", 
     ylab = "US Dollars ($10^16)", axes = FALSE, type = "h", lwd = 10, 
     col = c(rep(2, 6), NA, rep(4, 6)), lend = 1, panel.first = grid())
-xlabel = paste(Export.USCN$Year, "\n", Export.USCN$Country)
+xlabel = paste(Export.USCN$Year, "\\n", Export.USCN$Country)
 xlabel[7] = ""
 xlabel
 abline(v = 7, lty = 2)
@@ -26,18 +28,6 @@ axis(2)
 (ylabel = pretty(Export.USCN$Export * 8.27))
 axis(4, at = ylabel/8.27, labels = ylabel)
 mtext("Chinese RMB", side = 4, line = 2)
-box()}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+box()
+}
+\keyword{datasets}

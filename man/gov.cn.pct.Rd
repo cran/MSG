@@ -1,25 +1,27 @@
+\docType{data}
 \name{gov.cn.pct}
 \alias{gov.cn.pct}
-\alias{gov.cn.pct}
 \title{Percentage data in Chinese government websites}
+\format{A data frame with 10000 observations on the following 4
+variables.  \describe{ \item{percentage}{a numeric vector: the
+percentages} \item{count}{a numeric vector: the number of webpages
+corresponding to a certain percentage} \item{round0}{a logical
+vector: rounded to integers?} \item{round1}{a logical vector:
+rounded to the 1st decimal place?} }}
+\source{
+  Google (date: 2009/12/17)
+}
 \description{
-This data was collected from Google by searching for percentages in Chinese
-goverment websites.}
-\details{We can specify the domain when searching in Google. For this data, we used
-\samp{site:gov.cn}, e.g. to search for \samp{87.53\% site:gov.cn}.
-
-\subsection{Format}{A data frame with 10000 observations on the
-following 4 variables.  \describe{ \item{percentage}{a
-numeric vector: the percentages} \item{count}{a numeric
-vector: the number of webpages corresponding to a certain
-percentage} \item{round0}{a logical vector: rounded to
-integers?} \item{round1}{a logical vector: rounded to the
-1st decimal place?} }}
-
-\subsection{Source}{Google (date: 2009/12/17)}}
-\docType{data}
-\keyword{datasets}
-\examples{data(gov.cn.pct)
+  This data was collected from Google by searching for
+  percentages in Chinese goverment websites.
+}
+\details{
+  We can specify the domain when searching in Google. For
+  this data, we used \samp{site:gov.cn}, e.g. to search for
+  \samp{87.53\% site:gov.cn}.
+}
+\examples{
+data(gov.cn.pct)
 pct.lowess = function(cond) {
     with(gov.cn.pct, {
         plot(count ~ percentage, pch = ifelse(cond, 4, 20), col = rgb(0:1, 
@@ -67,50 +69,6 @@ if (interactive()) {
         lines(lowess(gov.cn.pct[!round1, 1:2], f = 1/3), col = "black", 
             lwd = 2)
     })
-}}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
+}
+\keyword{datasets}
