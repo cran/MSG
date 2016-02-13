@@ -1,3 +1,4 @@
+% Please edit documentation in R/MSG-package.R
 \docType{data}
 \name{ChinaLifeEdu}
 \alias{ChinaLifeEdu}
@@ -7,13 +8,11 @@
   \describe{ \item{Life.Expectancy}{Life expectancy}
   \item{High.Edu.NO}{Number of people with higher education} }}
 \source{
-  China Statistical Yearbook 2005. National Bureau of
-  Statistics.
+China Statistical Yearbook 2005. National Bureau of Statistics.
 }
 \description{
-  This data contains the life expectancy and number of
-  people with higher education in the 31 provinces and
-  districts in China (2005).
+This data contains the life expectancy and number of people with higher
+education in the 31 provinces and districts in China (2005).
 }
 \examples{
 data(ChinaLifeEdu)
@@ -23,7 +22,6 @@ u = par("usr")
 rect(u[1], u[3], u[2], u[4], col = "antiquewhite", border = "red")
 library(KernSmooth)
 est = bkde2D(x, apply(x, 2, dpik))
-contour(est$x1, est$x2, est$fhat, nlevels = 15, col = "darkgreen", add = TRUE, vfont = c("sans serif", 
-    "plain"))
+contour(est$x1, est$x2, est$fhat, nlevels = 15, col = "darkgreen", add = TRUE, 
+    vfont = c("sans serif", "plain"))
 }
-\keyword{datasets}

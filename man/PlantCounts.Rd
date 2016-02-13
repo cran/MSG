@@ -1,3 +1,4 @@
+% Please edit documentation in R/MSG-package.R
 \docType{data}
 \name{PlantCounts}
 \alias{PlantCounts}
@@ -6,10 +7,10 @@
   \describe{ \item{altitude}{altitude of the area} \item{counts}{number of
   plants} }}
 \source{
-  \url{http://cos.name/2008/11/lowess-to-explore-bivariate-correlation-by-yihui/}
+\url{http://cos.name/2008/11/lowess-to-explore-bivariate-correlation-by-yihui/}
 }
 \description{
-  For each altitude, the number of plants is recorded.
+For each altitude, the number of plants is recorded.
 }
 \examples{
 ## different span for LOWESS
@@ -22,4 +23,3 @@ with(PlantCounts, {
     }
 })
 }
-\keyword{datasets}
