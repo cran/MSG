@@ -5,7 +5,7 @@
 #' @aliases MSG-package MSG
 #' @docType package
 #' @import graphics
-#' @author Yihui Xie <\url{http://yihui.name}>
+#' @author Yihui Xie <\url{https://yihui.org}>
 #' @keywords package
 NULL
 
@@ -22,7 +22,7 @@ NULL
 #'   of the circle} \item{V2}{the second random variable with the y-axis
 #'   coordinate of the circle} }
 #'
-#' @source \url{http://yihui.name/en/2008/09/to-see-a-circle-in-a-pile-of-sand/}
+#' @source \url{https://yihui.org/en/2008/09/to-see-a-circle-in-a-pile-of-sand/}
 #' @name BinormCircle
 #' @docType data
 #' @examples data(BinormCircle)
@@ -96,7 +96,7 @@ NULL
 #' @format A data frame with 13 observations on the following 3 variables.
 #'   \describe{ \item{Export}{amount of export} \item{Year}{year from 1999 to
 #'   2004} \item{Country}{country: US or China} }
-#' @source \url{http://stat.wto.org}
+#' @source \url{https://www.wto.org/english/res_e/statis_e/statis_e.htm}
 #' @name Export.USCN
 #' @docType data
 #' @examples
@@ -191,7 +191,7 @@ NULL
 #'   \describe{ \item{altitude}{altitude of the area} \item{counts}{number of
 #'   plants} }
 #' @source
-#' \url{http://cos.name/2008/11/lowess-to-explore-bivariate-correlation-by-yihui/}
+#' \url{https://cosx.org/2008/11/lowess-to-explore-bivariate-correlation-by-yihui}
 #' @name PlantCounts
 #' @docType data
 #' @examples
@@ -339,7 +339,7 @@ NULL
 #' The pay per episode for actors as well as other information.
 #' @name tvearn
 #' @docType data
-#' @references \url{http://flowingdata.com/2011/02/15/visualize-this-tvs-top-earners/}
+#' @references \url{https://flowingdata.com/2011/02/15/visualize-this-tvs-top-earners/}
 #' @examples data(tvearn)
 #' plot(pay ~ rating, data=tvearn)
 #' library(ggplot2)
@@ -369,7 +369,7 @@ NULL
 #' greater than 6 since 1973.
 #' @name quake6
 #' @docType data
-#' @references \url{http://cos.name/cn/topic/101510}
+#' @references \url{https://d.cosx.org/d/101510}
 #' @examples data(quake6)
 #' library(ggplot2)
 #' qplot(year, month, data = quake6) + stat_sum(aes(size = ..n..)) +

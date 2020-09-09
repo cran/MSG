@@ -4,8 +4,17 @@
 \alias{andrews_curve}
 \title{Draw Andrew's Curve}
 \usage{
-andrews_curve(x, n = 101, type = "l", lty = 1, lwd = 1, pch = NA, xlab = "t", 
-    ylab = "f(t)", ...)
+andrews_curve(
+  x,
+  n = 101,
+  type = "l",
+  lty = 1,
+  lwd = 1,
+  pch = NA,
+  xlab = "t",
+  ylab = "f(t)",
+  ...
+)
 }
 \arguments{
 \item{x}{a data frame or matrix}
@@ -33,5 +42,5 @@ andrews_curve(iris[, -5], col = as.integer(iris[, 5]))
 \code{\link[graphics]{matplot}}
 }
 \author{
-Yihui Xie <\url{http://yihui.name}>
+Yihui Xie <\url{https://yihui.org}>
 }
