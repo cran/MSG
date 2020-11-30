@@ -1,7 +1,7 @@
 Package: MSG
 Type: Package
 Title: Data and Functions for the Book Modern Statistical Graphics
-Version: 0.5
+Version: 0.6
 Authors@R: c(
   person("Yihui", "Xie", role = c("aut", "cre"), email = "xie@yihui.name", comment = c(ORCID = "0000-0003-0645-5666")),
   person("Lijia", "Yu", role = "ctb"),
@@ -22,11 +22,11 @@ BugReports: https://github.com/yihui/MSG/issues
 Encoding: UTF-8
 RoxygenNote: 7.1.1
 NeedsCompilation: no
-Packaged: 2020-09-09 14:07:54 UTC; yihui
+Packaged: 2020-11-30 21:53:01 UTC; yihui
 Author: Yihui Xie [aut, cre] (<https://orcid.org/0000-0003-0645-5666>),
   Lijia Yu [ctb],
   Xiangyun Huang [ctb],
   Peng Zhao [ctb]
 Maintainer: Yihui Xie <xie@yihui.name>
 Repository: CRAN
-Date/Publication: 2020-09-09 14:40:03 UTC
+Date/Publication: 2020-11-30 22:50:02 UTC
